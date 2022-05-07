@@ -19,9 +19,9 @@ typecount = (type1count + type2count).sort_values(ascending=False)
 1. Print what's in the typecount variable so that we can see a table (series) of how many of each type there are.
 
 What is the most abundant type of Pokemon?
-
-"""
-
+water
+""" 
+print(typecount)
 
 """
 2. Let's use matplotlib to create a bar chart that shows visually how many of each type there are. Use and run the code below.
@@ -29,7 +29,9 @@ fig = plt.figure(figsize=(6, 3))
 typecount.plot.bar()
 plt.show()
 """
-
+fig = plt.figure(figsize=(6, 3))
+typecount.plot.bar()
+plt.show()
 
 """
 Each Pokemon has 6 different stats: HP, ATTACK, DEFENSE, SPECIAL ATTACK, SPECIAL DEFENSE, and SPEED. Those stats added together is their TOTAL POINTS, which is already a column in the pokedex dataframe. The code below calculate the average total points for each type of Pokemon.
